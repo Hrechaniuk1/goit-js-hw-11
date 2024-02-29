@@ -1,9 +1,11 @@
 export default function doMarkUp(data) {
-    const gallery = document.querySelector(".gallery")
+const gallery = document.querySelector(".gallery")
     const markUp = data.hits.map(a =>
         `<li class="gallery-item" data-id="${a.id}">
         <div class="img-container" >
-          <img class="image" src="${a.largeImageURL}" alt="${a.tags}">
+        <a class="large-image" href="${a.largeImageURL}">
+        <img class="image" src="${a.webformatURL}" alt="${a.tags}">
+        </a> 
         </div>
         <ul class="description-list" >
           <li class="description-item"><p>Likes</p><p>${a.likes}</p></li>
@@ -15,4 +17,4 @@ export default function doMarkUp(data) {
     gallery.insertAdjacentHTML("afterbegin", markUp)
 }
                 
-                 
+          

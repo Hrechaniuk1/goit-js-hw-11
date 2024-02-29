@@ -7,7 +7,8 @@
 @import url('./reset.css');
 @import url('./vite-promo.css');
 @import url('./header.css');
-/* @import url("izitoast/dist/css/iziToast.min.css"); */
+@import url("izitoast/dist/css/iziToast.min.css");
+@import url("simplelightbox/dist/simple-lightbox.min.css");
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
@@ -134,4 +135,12 @@ background-color: rgb(108, 140, 255);
     line-height: 24px;
     letter-spacing: 0.04em;
     text-align: left;
+}
+
+.description-item {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  justify-content: center;
+  align-items: center;
 }
